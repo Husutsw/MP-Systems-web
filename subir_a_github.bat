@@ -1,0 +1,3 @@
+@echo off
+echo Ejecutando Git Bash para subir los cambios a GitHub...
+"C:\Program Files\Git\bin\bash.exe" --login -i -c "cd '%cd%' && git add . && echo Escribe un mensaje de commit: && read commit && if [ -z \"$commit\" ]; then commit='Actualizacion rapida'; fi && git commit -m \"$commit\" && git push origin master && echo Proceso completado && read -p 'Presiona Enter para salir...'"
